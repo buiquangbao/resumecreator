@@ -38,13 +38,28 @@
     margin: 52px 36px 52px 36px; } }
 
 /* This is used to notify user should not use mobile */
-.mobileDetect {
+.for-desktop {
   display: block;
 } @media screen and (max-width: 1000px) {
-    .mobileDetect  {
-      display: none;
-    } 
-  }
+  .for-desktop  {
+    display: none;
+  } 
+}
+.for-mobile {
+  display: none;}
+@media screen and (max-width: 1000px) {
+  .for-mobile  {
+    display: block;
+    background-color: white;
+    box-shadow: 8px 12px 32px #00000056;
+    border-radius: 12px;
+    margin: 20% 10% 10% 10%;
+    padding: 10%;
+  } 
+} .for-mobile .p {
+  text-align: justify;
+  font-size: 22px;
+}
 
 a {
   text-decoration: none;
@@ -103,7 +118,7 @@ select {
   box-shadow: 8px 12px 32px #00000056;
   transition: transform 1s;
 } .sample:hover {
-  transform:translate(10px, -10px);
+  transform:translate(20px, -10px);
   transition: transform 1s;
 }
 .black-part {

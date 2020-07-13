@@ -675,8 +675,6 @@ function getFormInput() {
     doc.save('Test.pdf');
 }
 
-
-
 //Button
 const docStyle = document.documentElement.style;
 const aElem = document.querySelector('a');
@@ -704,7 +702,6 @@ document.body.onmouseup = function (e) {
 };
 
 
-
 //----------------------------- Smooth scrolling when clicking an anchor link -------------------------------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -715,3 +712,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+
+// ////////////////////////////////////////////////////////////////////////////////////////////////////
